@@ -1,0 +1,14 @@
+version: '2'
+volumes:
+    companion-data:
+services:
+  bitfocus-companion:
+    build: ./bitfocus-companion
+    environment:
+      UDEV: 1
+    privileged: true
+    volumes:
+      - 'companion-data:/companion'
+    devices:
+      - '/dev/bus/usb:/dev/bus/usb:rwm'
+    network_mode: host
