@@ -2,6 +2,10 @@ version: '2'
 volumes:
     companion-data:
 services:
+  redirect:
+    build: ./redirect
+    privileged: true
+    network_mode: host
   bitfocus-companion:
     build: ./bitfocus-companion
     environment:

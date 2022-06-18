@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     cmake \
     && rm -rf /var/lib/apt/lists/*
 
-ARG COMPANION_VERSION_TAG=v2.2.0
+ARG COMPANION_VERSION_TAG=v2.2.2
 
 # Clone repository and set as workdir 
 RUN git clone --depth 1 --branch "${COMPANION_VERSION_TAG}" https://github.com/bitfocus/companion.git /app

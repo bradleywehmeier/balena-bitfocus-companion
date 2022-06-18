@@ -19,4 +19,4 @@ data:
     - generic-aarch64
     - raspberrypi3-64
     - raspberrypi4-64
-version: 2.2.0
+version: 2.2.2
